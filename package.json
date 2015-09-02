@@ -7,5 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eisi Sig <im.eisisig@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eisisig/json-env.git"
+  },
+  "keywords": [
+    "env",
+    "process",
+    "json"
+  ],
+  "bugs": {
+    "url": "https://github.com/eisisig/json-env/issues"
+  },
+  "homepage": "https://github.com/eisisig/json-env#readme"
 }
