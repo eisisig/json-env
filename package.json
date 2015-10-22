@@ -1,6 +1,6 @@
 {
   "name": "json-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Loads a json file into process.env",
   "main": "index.js",
   "scripts": {
