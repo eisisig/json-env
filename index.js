@@ -16,7 +16,8 @@ module.exports = function ( configFile, options ) {
 function registerEnv ( obj, prefix ) {
 	prefix = (prefix || '').toUpperCase();
 	Object.keys(obj).forEach(function ( key ) {
-		if ( !process.env.hasOwnProperty(key) ) {
+		var keyToCheck = prefix + key.toUpperCase();
+		if ( !process.env.hasOwnProperty(keyToCheck) ) {
 			if ( !Array.isArray(obj[key]) && typeof obj[key] === 'object' ) {
 				registerEnv(obj[key], prefix + key + '_');
 			}
@@ -26,4 +27,3 @@ function registerEnv ( obj, prefix ) {
 		}
 	})
 }
-
